@@ -3,30 +3,31 @@ import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
 	// ! Please remember to replace the following site property with your own domain, used in astro.config.ts
-	url: "https://astro-cactus.chriswilliams.dev/",
+	url: "https://www.threegates.net/",
 	/*
 		- Used to construct the meta title property found in src/components/BaseHead.astro L:11
 		- The webmanifest name found in astro.config.ts L:42
 		- The link value found in src/components/layout/Header.astro L:35
 		- In the footer found in src/components/layout/Footer.astro L:12
 	*/
-	title: "Astro Cactus",
+	title: "ThreeGates",
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
-	author: "Chris Williams",
+	author: "Edward Chen 陈柏铭",
 	// Used as the default description meta property and webmanifest description
-	description: "An opinionated starter theme for Astro",
+	description: "欢迎来到ThreeGates！ThreeGates是一个我用于分享游戏开发知识和游戏体验的平台，希望你能在这里发现有趣的东西...",
 	// HTML lang property, found in src/layouts/Base.astro L:18 & astro.config.ts L:48
-	lang: "en-GB",
+	lang: "zh-CN",
 	// Meta property, found in src/components/BaseHead.astro L:42
-  ogLocale: "en_GB",
+  ogLocale: "zh_CN",
   // Determines whether to show the logo in the templates header
 	showLogo: true,
 	// Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
 	date: {
 		options: {
-			day: "numeric",
-			month: "short",
 			year: "numeric",
+			month: "2-digit",
+			day: "2-digit",
+			timeZone: "Asia/Shanghai",
 		},
 	},
 };
